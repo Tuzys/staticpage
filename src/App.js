@@ -67,10 +67,6 @@ export default function App() {
       }}
     >
       <WindowView
-        title={"TEST"}
-        content={"Testin kas WindowsView töötab. Vastus on jah B)."}
-      ></WindowView>
-      <WindowView
         title={"little counter"}
         content={
           <div className="counter">
@@ -132,7 +128,20 @@ export default function App() {
           </div>
         }
       ></WindowView>
-      <WindowView></WindowView>
+      <WindowView
+        title={"enesetunne?"}
+        content={
+          <div>
+            <p>kuidas su enesehinnang on?</p>
+            <input type="radio" value="good" />
+            <label>Hea</label>
+            <input type="radio" value="ok" />
+            <label> Ok</label>
+            <input type="radio" value="bad" />
+            <label> Halb</label>
+          </div>
+        }
+      ></WindowView>
     </div>
   );
 }
